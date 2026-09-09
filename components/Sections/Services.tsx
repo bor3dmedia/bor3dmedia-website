@@ -4,43 +4,43 @@ import Reveal from '../UI/Reveal';
 
 const Services: React.FC = () => {
   return (
-    <section id="services" className="py-16 md:py-32 bg-black text-white relative overflow-hidden">
-
-      {/* Background Noise/Texture */}
-      <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-10"></div>
-
+    <section id="services" className="relative overflow-hidden bg-zinc-50 text-black py-28 md:py-40 border-t border-zinc-100">
       <div className="container mx-auto px-6 md:px-12 relative z-10">
-        <div className="mb-16 md:mb-24">
+
+        {/* Centered heading */}
+        <div className="max-w-4xl mx-auto text-center mb-20 md:mb-28">
           <Reveal width="100%">
-            <p className="text-zinc-500 text-sm font-mono uppercase tracking-[0.25em] mb-6">What We Do</p>
-            <h2 className="text-4xl md:text-8xl font-display font-bold tracking-tighter leading-[0.9] mb-6">
-              ONE TEAM. <br />
-              <span className="text-[#f3fc46]">EVERY FORMAT.</span>
+            <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter leading-[1.02]">
+              Everything you need,
+              <br className="hidden md:block" /> <span className="font-serif-italic font-normal">nothing</span> you don't.
             </h2>
           </Reveal>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+        {/* Card grid */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 max-w-6xl mx-auto">
           {SERVICES_DATA.map((service, i) => {
             const Icon = service.icon;
             return (
-              <Reveal key={service.id} delay={(i % 2 === 0 ? 0 : 150) as 0 | 100 | 200 | 300 | 400} width="100%">
-                <div className="group h-full bg-white/[0.03] border border-white/10 rounded-3xl p-8 md:p-10 hover:border-[#f3fc46]/50 hover:bg-white/[0.05] transition-all duration-300">
-                  <div className="flex items-center justify-between mb-8">
-                    <span className="text-zinc-600 font-display font-bold text-lg">{service.id}</span>
-                    <Icon className="w-6 h-6 text-zinc-500 group-hover:text-[#f3fc46] transition-colors" />
+              <Reveal key={service.id} delay={(i * 100) as 0 | 100 | 200 | 300 | 400} width="100%">
+                <div className="group h-full flex flex-col">
+                  {/* Vibrant gradient tile */}
+                  <div className={`relative aspect-square w-full rounded-3xl bg-gradient-to-br ${service.gradient} overflow-hidden shadow-[0_10px_40px_-12px_rgba(0,0,0,0.35)] transition-transform duration-500 group-hover:-translate-y-1.5 group-hover:shadow-[0_24px_60px_-16px_rgba(0,0,0,0.45)]`}>
+                    {/* glossy sheen */}
+                    <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(120%_80%_at_20%_10%,rgba(255,255,255,0.35),transparent_50%)]" />
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <Icon className="w-14 h-14 md:w-16 md:h-16 text-white drop-shadow-[0_4px_12px_rgba(0,0,0,0.25)]" strokeWidth={1.5} />
+                    </div>
                   </div>
-                  <h3 className="text-2xl md:text-3xl font-display font-bold text-white mb-4">
-                    {service.title}
-                  </h3>
-                  <p className="text-zinc-400 text-base md:text-lg font-medium leading-relaxed">
-                    {service.description}
-                  </p>
+
+                  <h3 className="mt-6 text-lg md:text-xl font-bold tracking-tight">{service.title}</h3>
+                  <p className="mt-2 text-black/50 text-[15px] leading-relaxed">{service.description}</p>
                 </div>
               </Reveal>
             );
           })}
         </div>
+
       </div>
     </section>
   );

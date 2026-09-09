@@ -4,30 +4,16 @@ import Reveal from '../UI/Reveal';
 
 const CTA: React.FC = () => {
   return (
-    <section id="contact" className="relative overflow-hidden py-24 md:py-48">
-
-      {/* Video background */}
-      <video
-        autoPlay muted loop playsInline
-        className="absolute inset-0 w-full h-full object-cover"
-      >
-        <source src="/videos/yestheory.mp4" type="video/mp4" />
-      </video>
-
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/75" />
-
-      {/* Gradient vignette top/bottom */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black opacity-80" />
+    <section id="contact" className="relative overflow-hidden bg-white border-t border-zinc-100 py-28 md:py-44">
 
       {/* Subtle brand glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#f3fc46] rounded-full blur-[200px] opacity-[0.07]" />
+      <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-[#f3fc46] rounded-full blur-[220px] opacity-[0.12]" />
 
       <div className="container mx-auto px-6 md:px-12 relative z-10 text-center">
         <Reveal width="100%">
-          <h2 className="text-4xl md:text-8xl lg:text-9xl font-display font-bold text-white tracking-tighter mb-8 md:mb-12 leading-[0.9]">
-            READY TO <br />
-            <span className="text-[#f3fc46]">DOMINATE YOUTUBE?</span>
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-black tracking-tighter mb-8 md:mb-12 leading-[1.02]">
+            Ready to scale your
+            <span className="block"><span className="font-serif-italic font-normal">content?</span></span>
           </h2>
         </Reveal>
 
@@ -36,12 +22,12 @@ const CTA: React.FC = () => {
             <a
               href="https://calendar.app.google/8gmQRu6BPC1GPMxr9"
               target="_blank" rel="noopener noreferrer"
-              className="w-full md:w-auto px-8 md:px-12 py-5 md:py-6 bg-[#f3fc46] text-black text-lg md:text-xl font-bold rounded-full hover:scale-105 transition-transform flex items-center justify-center gap-3 shadow-[0_0_40px_rgba(243,252,70,0.25)]"
+              className="w-full md:w-auto px-10 md:px-12 py-5 md:py-6 bg-black text-white text-base md:text-lg font-bold rounded-full hover:scale-105 transition-transform flex items-center justify-center gap-3 shadow-xl shadow-black/10"
             >
               Book a Discovery Call
-              <ArrowRight className="w-6 h-6" />
+              <ArrowRight className="w-5 h-5" />
             </a>
-            <p className="text-xs text-white/30 font-mono uppercase tracking-widest max-w-md mx-auto leading-relaxed mt-2">
+            <p className="text-xs text-black/40 font-medium uppercase tracking-widest max-w-md mx-auto leading-relaxed mt-2">
               Work with a team that executes, sets strategy and grows your content across every platform.
             </p>
           </div>

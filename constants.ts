@@ -1,4 +1,4 @@
-import { MonitorPlay, Lightbulb, BarChart3, Layers, Zap, Globe, Users, TrendingUp, Video, Share2, Image, Repeat } from "lucide-react";
+import { MonitorPlay, Lightbulb, BarChart3, Layers, Zap, Globe, Users, TrendingUp, Video, Share2, Image, Repeat, ShieldCheck, Sparkles } from "lucide-react";
 
 export const NAVIGATION_LINKS = [
   { name: "Services", href: "#services" },
@@ -21,21 +21,25 @@ export const PROBLEMS = [
     number: "01",
     title: "Focus",
     description: "Every hour spent editing, planning, or managing is an hour not spent creating. That trade shouldn't exist.",
+    gradient: "from-amber-400 via-orange-500 to-yellow-400",
   },
   {
     number: "02",
     title: "Consistency",
     description: "A channel isn't just videos. It's uploads, thumbnails, formats, and strategy, all needing to hit the same bar, every time.",
+    gradient: "from-indigo-500 via-violet-600 to-blue-700",
   },
   {
     number: "03",
     title: "Scalability",
     description: "Growing a channel shouldn't mean hiring an editor, then a thumbnail designer, then a strategist. It should mean one team, scaling with you.",
+    gradient: "from-rose-500 via-red-500 to-orange-600",
   },
 ];
 
 export const PILLARS = [
   {
+    icon: ShieldCheck,
     title: "Reliability",
     tagline: "Show up. Every time.",
     points: [
@@ -46,6 +50,7 @@ export const PILLARS = [
     ],
   },
   {
+    icon: Sparkles,
     title: "Quality",
     tagline: "Every frame is intentional.",
     points: [
@@ -56,6 +61,7 @@ export const PILLARS = [
     ],
   },
   {
+    icon: TrendingUp,
     title: "Scalability",
     tagline: "Start with one. Scale to ten.",
     points: [
@@ -154,24 +160,28 @@ export const SERVICES_DATA = [
     title: "Long-Form Video Editing",
     description: "YouTube, vlogs, podcasts, interviews — fully edited start to finish, brand-consistent and ready to publish.",
     icon: Video,
+    gradient: "from-amber-400 via-orange-500 to-fuchsia-600",
   },
   {
     id: "02",
     title: "Short-Form Content",
     description: "Reels, TikToks, YouTube Shorts. Cut for maximum retention and paced for the platform algorithm.",
     icon: Share2,
+    gradient: "from-blue-500 via-violet-500 to-emerald-400",
   },
   {
     id: "03",
     title: "Thumbnails",
     description: "Click-worthy thumbnail design that turns impressions into views. Tested visually before delivery.",
     icon: Image,
+    gradient: "from-pink-500 via-rose-500 to-emerald-500",
   },
   {
     id: "04",
     title: "Full Content Pipeline",
     description: "From brief to final file — we manage the entire workflow so you never have to chase a deadline again.",
     icon: Repeat,
+    gradient: "from-red-500 via-orange-500 to-blue-600",
   },
 ];
 

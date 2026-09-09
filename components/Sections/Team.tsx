@@ -41,16 +41,15 @@ const TEAM = [
 
 const Team: React.FC = () => {
   return (
-    <section id="team" className="py-32 bg-zinc-50 border-t border-zinc-100 overflow-hidden">
+    <section id="team" className="py-28 md:py-40 bg-white border-t border-zinc-100 overflow-hidden">
       <div className="container mx-auto px-6 md:px-12">
 
         <Reveal width="100%">
-          <div className="mb-20">
-            <h2 className="text-4xl md:text-8xl font-display font-bold text-black tracking-tighter leading-[0.9] mb-6">
-              OUR<br />
-              <span className="inline-block bg-[#f3fc46] px-4 transform -skew-x-3 pb-1">TEAM.</span>
+          <div className="max-w-4xl mx-auto text-center mb-20 md:mb-24">
+            <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-black tracking-tighter leading-[1.02]">
+              The people <span className="font-serif-italic font-normal">behind</span> it.
             </h2>
-            <p className="text-zinc-500 text-xl md:text-2xl font-medium max-w-2xl mt-8">
+            <p className="text-black/50 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mt-8">
               Obsessed with content, driven by results. Every person on the team lives and breathes YouTube every single day.
             </p>
           </div>
@@ -75,7 +74,7 @@ const Team: React.FC = () => {
                 <div className="inline-block bg-[#f3fc46] text-black px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide mb-2">
                   {member.role}
                 </div>
-                <h3 className="text-lg font-display font-bold text-black leading-tight mb-1">
+                <h3 className="text-lg font-bold text-black leading-tight mb-1">
                   {member.name}
                 </h3>
                 <p className="text-zinc-500 text-xs font-medium leading-relaxed">

@@ -2,21 +2,21 @@ import React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-black py-12 border-t border-white/10">
+    <footer className="bg-white py-12 border-t border-zinc-200">
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
            <div className="mb-8 md:mb-0">
-              <a href="#" className="text-2xl font-bold font-display text-white">
-                Bored Media<span className="text-[#f3fc46]">.</span>
+              <a href="#" className="text-2xl font-bold text-black">
+                Bored Media<span className="text-[#c4cc14]">.</span>
               </a>
-              <p className="text-white/40 text-sm mt-2 font-medium">
+              <p className="text-black/40 text-sm mt-2 font-medium">
                 Strategic YouTube Partner for <br />Industry Leaders.
               </p>
            </div>
            
         </div>
         
-        <div className="flex flex-col md:flex-row justify-between items-center text-xs text-white/20 border-t border-white/10 pt-8 font-medium">
+        <div className="flex flex-col md:flex-row justify-between items-center text-xs text-black/30 border-t border-zinc-200 pt-8 font-medium">
            <p>&copy; {new Date().getFullYear()} Bored Media Creative Agency. All rights reserved.</p>
         </div>
       </div>

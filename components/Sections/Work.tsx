@@ -5,16 +5,13 @@ import Reveal from '../UI/Reveal';
 
 const Work: React.FC = () => {
   return (
-    <section id="work" className="pt-24 pb-24 bg-white relative z-0">
+    <section id="work" className="py-28 md:py-40 bg-zinc-50 border-t border-zinc-100 relative z-0">
       <div className="container mx-auto px-6 md:px-12">
-        <div className="mb-20 text-center">
+        <div className="max-w-4xl mx-auto text-center mb-20 md:mb-24">
             <Reveal width="100%">
-                <h2 className="text-5xl md:text-7xl font-display font-bold text-black tracking-tighter mb-6">
-                    OUR WORK 
+                <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-black tracking-tighter leading-[1.02]">
+                    Work we're <span className="font-serif-italic font-normal">proud</span> of.
                 </h2>
-                <p className="text-xl text-zinc-600 max-w-3xl mx-auto leading-relaxed">
-                    
-                </p>
             </Reveal>
         </div>
 
@@ -78,9 +75,9 @@ const Work: React.FC = () => {
                     >
                     {/* Phone Frame */}
                     <div className="relative aspect-[9/16] bg-black rounded-[2.5rem] overflow-hidden shadow-2xl transition-all duration-500 hover:shadow-[0_20px_40px_rgba(243,252,70,0.2)] hover:-translate-y-2 ring-1 ring-zinc-100">
-                        {item.embed ? (
+                        {(item as { embed?: string }).embed ? (
                           <iframe
-                            src={item.embed}
+                            src={(item as { embed?: string }).embed}
                             className="w-full h-full border-0 scale-[1.02]"
                             allowFullScreen
                             scrolling="no"
