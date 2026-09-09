@@ -26,23 +26,23 @@ const CTA: React.FC = () => {
       <div className="container mx-auto px-6 md:px-12 relative z-10 text-center">
         <Reveal width="100%">
           <h2 className="text-4xl md:text-8xl lg:text-9xl font-display font-bold text-white tracking-tighter mb-8 md:mb-12 leading-[0.9]">
-            PRONTO PARA <br />
-            <span className="text-[#f3fc46]">DOMINAR O YOUTUBE?</span>
+            READY TO <br />
+            <span className="text-[#f3fc46]">DOMINATE YOUTUBE?</span>
           </h2>
         </Reveal>
 
         <Reveal width="100%" delay={200}>
           <div className="flex flex-col items-center justify-center gap-8">
             <a
-              href="https://calendar.app.google/AETzZfN5aFjXbGj38"
+              href="https://calendar.app.google/8gmQRu6BPC1GPMxr9"
               target="_blank" rel="noopener noreferrer"
               className="w-full md:w-auto px-8 md:px-12 py-5 md:py-6 bg-[#f3fc46] text-black text-lg md:text-xl font-bold rounded-full hover:scale-105 transition-transform flex items-center justify-center gap-3 shadow-[0_0_40px_rgba(243,252,70,0.25)]"
             >
-              Marcar Chamada de Descoberta
+              Book a Discovery Call
               <ArrowRight className="w-6 h-6" />
             </a>
             <p className="text-xs text-white/30 font-mono uppercase tracking-widest max-w-md mx-auto leading-relaxed mt-2">
-              Trabalhe com uma equipa que executa, define estratégias e faz crescer o seu conteúdo em todas as plataformas.
+              Work with a team that executes, sets strategy and grows your content across every platform.
             </p>
           </div>
         </Reveal>

@@ -26,10 +26,10 @@ const Navbar: React.FC = () => {
                 ? 'bg-black text-white group-hover:bg-[#f3fc46] group-hover:text-black'
                 : 'bg-white text-black group-hover:bg-[#f3fc46]'
             }`}>
-            N
+            B
           </div>
           <span className={`text-xl font-bold tracking-tight font-display transition-colors duration-300 ${scrolled ? 'text-black' : 'text-white'}`}>
-            NATIVE<span className="text-[#f3fc46] drop-shadow-sm">.</span>
+            BORED MEDIA<span className="text-[#f3fc46] drop-shadow-sm">.</span>
           </span>
         </a>
 
@@ -51,15 +51,14 @@ const Navbar: React.FC = () => {
             ))}
           </div>
           <a
-            href="https://calendar.app.google/AETzZfN5aFjXbGj38"
-            target="_blank" rel="noopener noreferrer"
+            href="#contact"
             className={`flex items-center gap-2 px-6 py-3 text-sm font-bold rounded-full transition-all duration-300 shadow-lg ${
               scrolled
                 ? 'bg-black text-white hover:bg-[#f3fc46] hover:text-black shadow-black/10'
                 : 'bg-white text-black hover:bg-[#f3fc46] shadow-black/20'
             }`}
           >
-            Marcar uma Chamada
+            Get in Touch
           </a>
         </div>
 
@@ -85,12 +84,11 @@ const Navbar: React.FC = () => {
               </a>
             ))}
             <a 
-              href="https://calendar.app.google/AETzZfN5aFjXbGj38"
-              target="_blank" rel="noopener noreferrer"
+              href="#contact"
               onClick={() => setIsOpen(false)}
               className="mt-8 px-8 py-4 bg-black text-white rounded-full font-bold text-lg"
             >
-              Marcar uma Chamada
+              Get in Touch
             </a>
           </div>
         )}

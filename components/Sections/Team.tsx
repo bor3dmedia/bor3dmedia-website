@@ -4,36 +4,36 @@ import Reveal from '../UI/Reveal';
 const TEAM = [
   {
     name: "Francisco Albuquerque",
-    role: "Co-Fundador",
-    description: "Visão estratégica e direção criativa. Co-criador do projecto Andamente, com mais de 300 mil seguidores nas redes sociais.",
+    role: "Co-Founder",
+    description: "Strategic vision and creative direction. Co-creator of the Andamente project, with over 300k followers across social media.",
     image: "https://prifvutxutzcspiukzek.supabase.co/storage/v1/object/public/nothing1/1.jpeg",
     initial: "F",
   },
   {
-    name: "João Garcia",
-    role: "Co-Fundador",
-    description: "Responsável por toda a operação. Da logística às finanças, garante que a máquina nunca para.",
-    image: "https://prifvutxutzcspiukzek.supabase.co/storage/v1/object/public/nothing1/3.jpeg",
-    initial: "JG",
+    name: "Bruno Carvalho",
+    role: "Co-Founder",
+    description: "In charge of the entire operation. From logistics to finances, he keeps the machine running.",
+    image: "/bruno.png",
+    initial: "BC",
   },
   {
     name: "Fábio Domingues",
-    role: "Videografia",
-    description: "Por detrás da câmara em cada produção. O olho que tudo vê.",
+    role: "Videography",
+    description: "Behind the camera on every production. The eye that sees everything.",
     image: "https://prifvutxutzcspiukzek.supabase.co/storage/v1/object/public/nothing1/4.jpeg",
     initial: "FD",
   },
   {
     name: "João Reis",
-    role: "Criativo & Designer",
-    description: "Transforma ideias em identidades visuais que ficam na memória.",
+    role: "Creative & Designer",
+    description: "Turns ideas into visual identities that stick in your memory.",
     image: "/reis.jpg",
     initial: "JR",
   },
   {
     name: "Raquel Nogueira",
     role: "Marketing",
-    description: "A mente por detrás da distribuição e do crescimento orgânico.",
+    description: "The mind behind distribution and organic growth.",
     image: "https://prifvutxutzcspiukzek.supabase.co/storage/v1/object/public/nothing1/2.jpeg",
     initial: "R",
   },
@@ -47,11 +47,11 @@ const Team: React.FC = () => {
         <Reveal width="100%">
           <div className="mb-20">
             <h2 className="text-4xl md:text-8xl font-display font-bold text-black tracking-tighter leading-[0.9] mb-6">
-              A NOSSA<br />
-              <span className="inline-block bg-[#f3fc46] px-4 transform -skew-x-3 pb-1">EQUIPA.</span>
+              OUR<br />
+              <span className="inline-block bg-[#f3fc46] px-4 transform -skew-x-3 pb-1">TEAM.</span>
             </h2>
             <p className="text-zinc-500 text-xl md:text-2xl font-medium max-w-2xl mt-8">
-              Obcecados com conteúdo, apaixonados por resultados. Cada pessoa da equipa vive e respira YouTube todos os dias.
+              Obsessed with content, driven by results. Every person on the team lives and breathes YouTube every single day.
             </p>
           </div>
         </Reveal>
@@ -65,9 +65,7 @@ const Team: React.FC = () => {
                   <img
                     src={member.image}
                     alt={member.name}
-                    className={`w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 ${
-                      member.name === 'João Garcia' ? 'scale-125 object-top' : ''
-                    }`}
+                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
                   />
                   {/* Overlay with initial fallback */}
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300" />

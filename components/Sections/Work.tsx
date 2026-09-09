@@ -10,7 +10,7 @@ const Work: React.FC = () => {
         <div className="mb-20 text-center">
             <Reveal width="100%">
                 <h2 className="text-5xl md:text-7xl font-display font-bold text-black tracking-tighter mb-6">
-                    O NOSSO TRABALHO 
+                    OUR WORK 
                 </h2>
                 <p className="text-xl text-zinc-600 max-w-3xl mx-auto leading-relaxed">
                     

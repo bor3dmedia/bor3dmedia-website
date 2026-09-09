@@ -28,13 +28,14 @@ const Process: React.FC = () => {
       <div className="container mx-auto px-6 md:px-12">
         <div className="mb-24 text-center">
             <Reveal width="100%">
+                <p className="text-zinc-400 text-sm font-mono uppercase tracking-[0.25em] mb-6">The Process</p>
                 <div className="inline-block relative">
-                    <h2 className="text-4xl md:text-9xl font-display font-bold text-black tracking-tighter leading-[0.9] mb-4 relative z-10">
-                    DA IDEIA AO <br /><span className="text-black bg-[#f3fc46] px-6 transform -skew-x-6 inline-block">CRESCIMENTO.</span>
+                    <h2 className="text-4xl md:text-8xl font-display font-bold text-black tracking-tighter leading-[0.9] mb-4 relative z-10">
+                    FOUR STEPS. <br /><span className="text-black bg-[#f3fc46] px-6 transform -skew-x-6 inline-block">ZERO FRICTION.</span>
                     </h2>
                 </div>
                 <p className="text-zinc-500 text-lg md:text-2xl font-medium max-w-2xl mx-auto mt-8">
-                    Um processo construído para transformar qualquer marca numa presença real no YouTube.
+                    A workflow built to keep you publishing without the chaos.
                 </p>
             </Reveal>
         </div>

@@ -61,70 +61,19 @@ const Hero: React.FC = () => {
       <div className="h-20 shrink-0" />
 
       {/* ── Main content ── */}
-      <div className="relative z-10 flex-1 flex flex-col px-8 md:px-14 pb-10">
+      <div className="relative z-10 flex-1 flex flex-col items-start justify-end text-left px-8 md:px-14 pb-16 md:pb-20">
+        <h1 className="text-[9vw] md:text-[5vw] font-display font-bold leading-[0.9] tracking-tighter text-white max-w-4xl">
+          <span className="text-white block">You create.</span>
+          <span className="text-white/40 block">We handle the rest.</span>
+        </h1>
 
-        {/* Top row: logo large + services */}
-        <div className="flex-1 flex flex-col md:flex-row md:items-center justify-between gap-8 pt-10 md:pt-20">
-
-          {/* Brand + tagline */}
-          <div className="flex flex-col gap-6 max-w-2xl">
-            <h1 className="text-[18vw] md:text-[9vw] lg:text-[8vw] font-display font-bold text-white leading-[0.85] tracking-tighter">
-              NATIVE<span className="text-[#f3fc46]">.</span>
-            </h1>
-            <p className="text-white/50 text-sm md:text-lg font-medium max-w-sm leading-relaxed">
-              Transformamos o YouTube num canal estratégico para marcas.
-            </p>
-          </div>
-
-          {/* Services list — hidden on mobile */}
-          <div className="hidden md:flex flex-col gap-3 md:text-right">
-            {[
-              'Direção Criativa',
-              'Edição',
-              'Estratégia de Conteúdo',
-              'Gestão de Marcas',
-            ].map((s) => (
-              <span
-                key={s}
-                className="text-white/70 text-lg md:text-xl font-display font-semibold tracking-tight hover:text-[#f3fc46] transition-colors cursor-default"
-              >
-                {s}
-              </span>
-            ))}
-          </div>
-        </div>
-
-        {/* Bottom row: tagline left + founder card right */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mt-auto pt-8">
-
-          {/* Bottom left copy — hidden on mobile */}
-          <p className="hidden md:block text-white/40 text-sm font-mono uppercase tracking-widest max-w-xs leading-relaxed">
-            © {new Date().getFullYear()} Native Creative Agency
-          </p>
-
-          {/* Founder card — full width on mobile */}
-          <div className="flex items-center gap-4 bg-white rounded-2xl p-3 pr-5 shadow-2xl w-full md:w-fit">
-            <img
-              src="https://prifvutxutzcspiukzek.supabase.co/storage/v1/object/public/nothing1/1.jpeg"
-              alt="Francisco"
-              className="w-14 h-14 rounded-xl object-cover flex-shrink-0"
-            />
-            <div className="flex flex-col gap-2">
-              <div>
-                <p className="text-zinc-400 text-xs font-medium">Co-Fundador da Native</p>
-                <p className="text-black font-display font-bold text-lg leading-tight">Francisco.</p>
-              </div>
-              <a
-                href="https://calendar.app.google/AETzZfN5aFjXbGj38"
-                target="_blank" rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-black text-white text-xs font-bold px-4 py-2 rounded-full hover:bg-[#f3fc46] hover:text-black transition-colors"
-              >
-                Marcar uma Chamada <ArrowRight className="w-3 h-3" />
-              </a>
-            </div>
-          </div>
-
-        </div>
+        <a
+          href="https://calendar.app.google/8gmQRu6BPC1GPMxr9"
+          target="_blank" rel="noopener noreferrer"
+          className="mt-8 inline-flex items-center gap-2 px-8 py-3.5 bg-[#f3fc46] text-black text-sm font-bold rounded-full hover:scale-105 transition-transform shadow-[0_0_30px_rgba(243,252,70,0.25)]"
+        >
+          Work With Us <ArrowRight className="w-4 h-4" />
+        </a>
       </div>
     </section>
   );

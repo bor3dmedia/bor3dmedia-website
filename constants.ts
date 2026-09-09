@@ -1,10 +1,70 @@
 import { MonitorPlay, Lightbulb, BarChart3, Layers, Zap, Globe, Users, TrendingUp, Video, Share2, Image, Repeat } from "lucide-react";
 
 export const NAVIGATION_LINKS = [
-  { name: "O Desafio", href: "#why-us" },
-  { name: "Abordagem", href: "#services" },
-  { name: "Trabalho", href: "#work" },
-  { name: "Equipa", href: "#team" },
+  { name: "Services", href: "#services" },
+  { name: "Why Us", href: "#why-us" },
+  { name: "Process", href: "#process" },
+];
+
+export const CONTACT_EMAIL = "hello@boredmedia.com";
+
+export const SERVICE_OPTIONS = [
+  "Long-form video editing",
+  "Short-form content",
+  "Thumbnails",
+  "Full content pipeline",
+  "Not sure yet",
+];
+
+export const PROBLEMS = [
+  {
+    number: "01",
+    title: "Focus",
+    description: "Every hour spent editing, planning, or managing is an hour not spent creating. That trade shouldn't exist.",
+  },
+  {
+    number: "02",
+    title: "Consistency",
+    description: "A channel isn't just videos. It's uploads, thumbnails, formats, and strategy, all needing to hit the same bar, every time.",
+  },
+  {
+    number: "03",
+    title: "Scalability",
+    description: "Growing a channel shouldn't mean hiring an editor, then a thumbnail designer, then a strategist. It should mean one team, scaling with you.",
+  },
+];
+
+export const PILLARS = [
+  {
+    title: "Reliability",
+    tagline: "Show up. Every time.",
+    points: [
+      "24-hour internal review — we flag issues before you do",
+      "Structured workflow with clear milestones on every project",
+      "Dedicated editor on your account — no random handoffs",
+      "Async-first comms: always updated, never left waiting",
+    ],
+  },
+  {
+    title: "Quality",
+    tagline: "Every frame is intentional.",
+    points: [
+      "2 rounds of revision included on every deliverable",
+      "Platform-native editing — paced for YouTube, Reels, TikTok",
+      "Storytelling-first: strong opening, flow, reason to watch",
+      "Visual consistency across all content — same look, always",
+    ],
+  },
+  {
+    title: "Scalability",
+    tagline: "Start with one. Scale to ten.",
+    points: [
+      "Flexible volume — 1 video a week or 10+, no friction",
+      "No hiring, no onboarding — productive from day one",
+      "Consistent output whether you send 2 briefs or 20",
+      "We grow with your channel as your audience grows",
+    ],
+  },
 ];
 
 export const CLIENT_LOGOS = [
@@ -25,65 +85,65 @@ export const PORTFOLIO_ITEMS = [
   {
     id: 1,
     title: "Creator Golf Club",
-    category: "Marca Própria",
+    category: "Own Brand",
     views: "Viral",
     image: "https://picsum.photos/id/338/1080/1920",
     video: "https://storage.googleapis.com/bored_tourist_media/videos_off/IMG_3114_3.mp4",
     client: "Creator Golf Club",
-    stat: "Marca criada pelos maiores criadores de golfe do mundo.",
+    stat: "A brand created by the biggest golf creators in the world.",
     link: "https://www.creatorgolfclub.com",
     results: [
-      { value: "+50M", label: "Subscritores combinados" },
-      { value: "+8M", label: "Visualizações" },
-      { value: "#1", label: "Golf no YouTube" },
+      { value: "+50M", label: "Combined subscribers" },
+      { value: "+8M", label: "Views" },
+      { value: "#1", label: "Golf on YouTube" },
     ]
   },
   {
     id: 2,
     title: "Yes Theory",
     category: "Seek Discomfort",
-    views: "10M Subscritores",
+    views: "10M Subscribers",
     image: "https://picsum.photos/id/870/1080/1920",
     video: "https://storage.googleapis.com/bored_tourist_media/videos_off/yestheory.mp4",
     client: "Yes Theory",
-    stat: "Conteúdo produzido para a Seek Discomfort, marca dos Yes Theory.",
+    stat: "Content produced for Seek Discomfort, the Yes Theory brand.",
     link: "https://www.youtube.com/@YesTheory",
     results: [
-      { value: "+10M", label: "Subscritores" },
-      { value: "+4B", label: "Visualizações totais" },
-      { value: "+300M", label: "Impressões" },
+      { value: "+10M", label: "Subscribers" },
+      { value: "+4B", label: "Total views" },
+      { value: "+300M", label: "Impressions" },
     ]
   },
   {
     id: 3,
     title: "Ali Abdaal",
-    category: "Educação & Negócios",
-    views: "6M Subscritores",
+    category: "Education & Business",
+    views: "6M Subscribers",
     image: "https://storage.googleapis.com/bored_tourist_media/Images_Brands/ali%20abdaal.jpg",
     video: "https://storage.googleapis.com/bored_tourist_media/videos_off/ali.mp4",
     client: "Ali Abdaal",
-    stat: "Empreendedor com múltiplos negócios, best-seller do NYT e o maior criador de produtividade do mundo.",
+    stat: "Entrepreneur with multiple businesses, NYT best-seller and the biggest productivity creator in the world.",
     link: "https://www.youtube.com/@aliabdaal",
     results: [
-      { value: "+6M", label: "Subscritores" },
-      { value: "+500M", label: "Visualizações" },
-      { value: "+15M", label: "Impressões/mês" },
+      { value: "+6M", label: "Subscribers" },
+      { value: "+500M", label: "Views" },
+      { value: "+15M", label: "Impressions/month" },
     ]
   },
   {
     id: 4,
     title: "Chuffsters",
-    category: "Entretenimento",
-    views: "1M Subscritores",
+    category: "Entertainment",
+    views: "1M Subscribers",
     image: "https://storage.googleapis.com/bored_tourist_media/Images_Brands/chuff.jpg",
     video: "https://storage.googleapis.com/bored_tourist_media/videos_off/chuff.mp4",
     client: "Chuffsters",
-    stat: "Produção de conteúdo para os 4 canais do Chuffsters.",
+    stat: "Content production for all 4 Chuffsters channels.",
     link: "https://www.youtube.com/@Chuffsters",
     results: [
-      { value: "+100M", label: "Views geradas" },
-      { value: "4", label: "Canais geridos" },
-      { value: "+1M", label: "Subscritores" },
+      { value: "+100M", label: "Views generated" },
+      { value: "4", label: "Channels managed" },
+      { value: "+1M", label: "Subscribers" },
     ]
   }
 ];
@@ -91,73 +151,49 @@ export const PORTFOLIO_ITEMS = [
 export const SERVICES_DATA = [
   {
     id: "01",
-    title: "Direção Criativa",
-    description: "Antes de gravar um único segundo, definimos o que é que vai fazer a audiência sentir. O tema, o ritmo, a forma como a história é contada porque um vídeo bem editado com a ideia errada não chega a lado nenhum.",
-    tags: ["Estrutura", "Ritmo"],
-    icon: Lightbulb,
-    image: "https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?w=1280&q=80"
+    title: "Long-Form Video Editing",
+    description: "YouTube, vlogs, podcasts, interviews — fully edited start to finish, brand-consistent and ready to publish.",
+    icon: Video,
   },
   {
     id: "02",
-    title: "Identidade da Marca",
-    description: "Analisamos o teu perfil a fundo para garantir que cada vídeo parece inconfundivelmente teu.",
-    tags: ["Identidade", "Marca Segura"],
-    icon: Repeat,
-    image: "https://images.unsplash.com/photo-1539635278303-d4002c07eae3?w=1280&q=80"
+    title: "Short-Form Content",
+    description: "Reels, TikToks, YouTube Shorts. Cut for maximum retention and paced for the platform algorithm.",
+    icon: Share2,
   },
   {
     id: "03",
-    title: "Edição de Retenção",
-    description: "Não nos limitamos a editar.. desenhamos a jornada do espectador para o manter envolvido ao longo de todo o vídeo.",
-    tags: ["Edição", "Retenção"],
-    icon: Layers,
-    image: "/editing.jpg"
+    title: "Thumbnails",
+    description: "Click-worthy thumbnail design that turns impressions into views. Tested visually before delivery.",
+    icon: Image,
   },
   {
     id: "04",
-    title: "Amplificação Short-Form",
-    description: "Transformamos uma ideia em múltiplos formatos para o máximo alcance.",
-    tags: ["Reutilização", "Vertical"],
-    icon: Share2,
-    image: "/short.webp"
+    title: "Full Content Pipeline",
+    description: "From brief to final file — we manage the entire workflow so you never have to chase a deadline again.",
+    icon: Repeat,
   },
-  {
-    id: "05",
-    title: "Estratégia de Thumbnails",
-    description: "Packaging apelativo ao clique que se destaca no ruído e apoia a estratégia de distribuição mais ampla.",
-    tags: ["CTR", "Packaging"],
-    icon: Image,
-    image: "/thomas.webp"
-  },
-  {
-    id: "06",
-    title: "Consultoria Estratégica",
-    description: "Orientamos sobre consistência de publicação, formatos e decisões assentes em dados de plataforma para impulsionar o crescimento.",
-    tags: ["Crescimento", "Consultoria"],
-    icon: Users,
-    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1280&q=80"
-  }
 ];
 
 export const PROCESS_STEPS = [
   {
     number: "01",
-    title: "Estratégia",
-    description: "Ideação & Roadmap"
+    title: "Ideation",
+    description: "We align on angles, references and direction, so every video starts with a clear reason to exist."
   },
   {
     number: "02",
-    title: "Execução",
-    description: "Produção & Direção"
+    title: "Packaging",
+    description: "Titles and thumbnails designed to earn the click before a single frame is edited."
   },
   {
     number: "03",
-    title: "Amplificação",
-    description: "Distribuição & Shorts"
+    title: "Editing",
+    description: "We produce a first cut, run an internal review, and deliver for your feedback within 24 hours."
   },
   {
     number: "04",
-    title: "Crescimento",
-    description: "Expandir & Optimizar"
+    title: "Deliver",
+    description: "After revisions, the final file is exported in exactly the format you need — ready to publish immediately."
   }
 ];
